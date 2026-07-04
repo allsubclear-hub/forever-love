@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #ffe6f0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.center-box {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.letter-box {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  background: #fff0f6;
+  border-radius: 16px;
+  line-height: 1.8;
+}
+
+h1, h2 {
+  color: #ff4d88;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 28px;
+  background: #ff4d88;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: #ff1f6a;
+}
+
+#timer {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+/* HEARTS */
+.hearts::before {
+  content: "💗 💕 💖 💞 💓";
+  position: fixed;
+  left: 10px;
+  top: 0;
+  animation: float 8s linear infinite;
+}
+
+@keyframes float {
+  from { top: 100%; }
+  to { top: -20%; }
+}
